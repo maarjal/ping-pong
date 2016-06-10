@@ -1,7 +1,6 @@
 var numArray = [];
 var result;
 var pingPong = function(number) {
-  debugger;
   for (var i = 1; i <= number; i++) {
     numArray.push(i);
   }
