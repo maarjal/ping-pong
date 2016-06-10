@@ -5,10 +5,14 @@ body {
   color: #2B2D42;
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
-  /*padding-bottom: 15px;*/
+  padding-bottom: 5px;
 }
 
 #result {
+  display: none;
+}
+
+#after {
   display: none;
 }
 

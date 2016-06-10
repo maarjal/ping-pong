@@ -36,5 +36,9 @@ $(document).ready(function() {
           counter++;
       });
       $("#result").show();
+      $(".rules").slideUp("fast");
+      $("#before").hide();
+      $("h3").hide();
+      $("#after").show();
     });
   });

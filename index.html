@@ -15,15 +15,16 @@
         <h1>Ping-Pong Game</h1>
         <h3>Ping Pong will count up to your number, except:</h3>
       </div>
-      <ul>
+      <ul class="rules">
         <li>Numbers divisible by 3 become "ping"</li>
         <li>Numbers divisible by 5 become "pong"</li>
-        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+        <li>Numbers divisible by 15 become "pingpong"</li>
       </ul>
 
       <form id="ping-pong">
         <div class="form-group">
-          <label for="number">Enter a number here<span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span></label>
+          <label id="before" for="number">Enter a number here<span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span></label>
+          <label id="after" for="number">Scroll down for results<span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span></label>
           <input id="number" type="text">
         </div>
         <button type="submit" class="btn btn-lg btn-default">Let's play</button>
