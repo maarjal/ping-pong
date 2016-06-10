@@ -11,7 +11,9 @@ var pingPong = function(number) {
         numArray.splice(counter, 1, "pingpong");
       } else if (numArray[counter] % 5 === 0 && numArray[counter] % 3 !== 0) {
         numArray.splice(counter, 1, "pong");
-      } 
+      } else if (numArray[counter] % 3 === 0 && numArray[counter] % 5 !== 0) {
+        numArray.splice(counter, 1, "ping");
+      }
       counter++;
     });
     return result;
