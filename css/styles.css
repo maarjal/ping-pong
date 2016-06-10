@@ -1,3 +1,23 @@
 #result {
   display: none;
 }
+
+.container {
+  width: 50%;
+  text-align: center;
+}
+
+.jumbotron {
+  text-align: center;
+  background: url("../img/ball.jpeg") no-repeat center center;
+  background-size: cover;
+}
+
+h1 {
+  padding-top: -15px;
+}
+
+ul {
+  padding-top: 15px;
+  list-style-position:inside;
+}

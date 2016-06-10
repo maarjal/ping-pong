@@ -10,14 +10,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ping-Pong Game</h1>
+      <div class="jumbotron">
+        <h1>Ping-Pong Game</h1>
+        <h4>Ping Pong will count up to your number from 1 with the following exceptions:</h4>
+      </div>
+      <ul>
+        <li>Numbers divisible by 3 become "ping"</li>
+        <li>Numbers divisible by 5 become "pong"</li>
+        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+      </ul>
 
       <form id="ping-pong">
         <div class="form-group">
-          <label for="number">Enter a number to play</label>
+          <label for="number">Enter a number here</label>
           <input id="number" type="text">
         </div>
-        <button type="submit" class="btn">Let's play</button>
+        <button type="submit" class="btn btn-lg btn-default">Let's play</button>
       </form>
 
       <ul id="result"></ul>
