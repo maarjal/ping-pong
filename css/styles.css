@@ -1,7 +1,11 @@
 body {
   background: url("../img/background.png");
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  color: #2B2D42;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  /*padding-bottom: 15px;*/
 }
 
 #result {
@@ -17,12 +21,35 @@ body {
   text-align: center;
   background: url("../img/ball.jpeg") no-repeat center center;
   background-size: cover;
-  color: #E71D36;
+  color: #2B2D42;
   opacity: 0.7;
+  font-family: 'Kreon', serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-h1 {
+.jumbotron h1 {
   padding-top: -15px;
+  text-decoration: underline;
+  color: #D90429;
+}
+
+p, ul {
+  font-size: 1.6em;
+}
+
+form {
+  font-size: 1.5em;
+}
+
+.glyphicon {
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+input {
+  border: 1px solid #D90429;
+  border-radius: 5px;
 }
 
 .btn {
@@ -44,4 +71,5 @@ h1 {
 ul {
   padding-top: 15px;
   list-style-position:inside;
+  list-style: none;
 }

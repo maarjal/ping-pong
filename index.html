@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Kreon:400,700|Ubuntu:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <script src="js/jquery-1.12.4.js"></script>
@@ -12,7 +13,7 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Ping-Pong Game</h1>
-        <h4>Ping Pong will count up to your number from 1 with the following exceptions:</h4>
+        <h3>Ping Pong will count up to your number, except:</h3>
       </div>
       <ul>
         <li>Numbers divisible by 3 become "ping"</li>
@@ -22,7 +23,7 @@
 
       <form id="ping-pong">
         <div class="form-group">
-          <label for="number">Enter a number here</label>
+          <label for="number">Enter a number here<span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span></label>
           <input id="number" type="text">
         </div>
         <button type="submit" class="btn btn-lg btn-default">Let's play</button>
