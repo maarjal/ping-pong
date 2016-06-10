@@ -3,20 +3,19 @@ var pingPong = function(number) {
   for (var i = 1; i <= number; i++) {
     numArray.push(i);
   }
-    var counter = 0;
-    numArray.forEach(function(num) {
-      if (numArray[counter] % 3 === 0 && numArray[counter] % 5 === 0) {
-        numArray.splice(counter, 1, "pingpong");
-      } else if (numArray[counter] % 5 === 0 && numArray[counter] % 3 !== 0) {
-        numArray.splice(counter, 1, "pong");
-      } else if (numArray[counter] % 3 === 0 && numArray[counter] % 5 !== 0) {
-        numArray.splice(counter, 1, "ping");
-      }
-      counter++;
-    });
-    return result;
-  };
-
+  var counter = 0;
+  numArray.forEach(function(num) {
+    if (numArray[counter] % 3 === 0 && numArray[counter] % 5 === 0) {
+      numArray.splice(counter, 1, "pingpong");
+    } else if (numArray[counter] % 5 === 0 && numArray[counter] % 3 !== 0) {
+      numArray.splice(counter, 1, "pong");
+    } else if (numArray[counter] % 3 === 0 && numArray[counter] % 5 !== 0) {
+      numArray.splice(counter, 1, "ping");
+    }
+    counter++;
+  });
+  return result;
+};
 
 
 $(document).ready(function() {
