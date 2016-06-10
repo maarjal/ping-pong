@@ -1,12 +1,11 @@
 var numArray = [];
-var result;
 var pingPong = function(number) {
   for (var i = 1; i <= number; i++) {
     numArray.push(i);
   }
     var counter = 0;
     numArray.forEach(function(num) {
-      if(numArray[counter] % 3 === 0 && numArray[counter] % 5 === 0) {
+      if (numArray[counter] % 3 === 0 && numArray[counter] % 5 === 0) {
         numArray.splice(counter, 1, "pingpong");
       } else if (numArray[counter] % 5 === 0 && numArray[counter] % 3 !== 0) {
         numArray.splice(counter, 1, "pong");
@@ -35,10 +34,10 @@ $(document).ready(function() {
           $("#result").append("<li>" + numArray[counter] + "</li>");
           counter++;
       });
-      $("#result").show();
+      $("h3").hide();
       $(".rules").slideUp("fast");
       $("#before").hide();
-      $("h3").hide();
       $("#after").show();
+      $("#result").show();
     });
   });
