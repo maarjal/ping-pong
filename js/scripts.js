@@ -1,14 +1,21 @@
 var numArray = [];
 var result;
 var pingPong = function(number) {
+  debugger;
   for (var i = 1; i <= number; i++) {
     numArray.push(i);
-    if (i % 15 === 0) {
-        numArray.splice(i-1, 1, "pingpong");
-      }
-    } 
-  return result;
-};
+  }
+    var counter = 0;
+    numArray.forEach(function(num) {
+      if(numArray[counter] % 3 === 0 && numArray[counter] % 5 === 0) {
+        numArray.splice(counter, 1, "pingpong");
+      } else if (numArray[counter] % 5 === 0 && numArray[counter] % 3 !== 0) {
+        numArray.splice(counter, 1, "pong");
+      } 
+      counter++;
+    });
+    return result;
+  };
 
 
 
@@ -23,7 +30,7 @@ $(document).ready(function() {
 
     var counter = 0;
       numArray.forEach(function(list) {
-          $(".list").append("<li>" + numArray[counter] + "</li>");
+          $("#result").append("<li>" + numArray[counter] + "</li>");
           counter++;
       });
       $("#result").show();
