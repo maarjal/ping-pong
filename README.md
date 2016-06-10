@@ -13,15 +13,15 @@ The player can insert a number and get back a range of numbers from 1 up to the 
 * It can count up to the provided number.
   * Example Input: 2
   * Example Output: [1, 2]
-* Numbers divisible by 15 are replaced with “pingpong”.
-  * Example Input: 15
-  * Example Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, "pingpong"]
-* Numbers divisible by 5 are replaced with “pong”.
-  * Example Input: 5
-  * Example Output: [1, 2, 3, 4, "pong"]
 * Numbers divisible by 3 are replaced with “ping”.
   * Example Input: 3
   * Example Output: [1, 2, "ping"]
+* Numbers divisible by 5 are replaced with “pong”.
+    * Example Input: 5
+    * Example Output: [1, 2, "ping", 4, "pong"]
+* Numbers divisible by 15 are replaced with “pingpong”.
+  * Example Input: 15
+  * Example Output: [1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14, "pingpong"]
 
 ## Setup/Installation Requirements
 
