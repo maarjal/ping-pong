@@ -1,3 +1,9 @@
+body {
+  background: url("../img/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 #result {
   display: none;
 }
@@ -11,10 +17,28 @@
   text-align: center;
   background: url("../img/ball.jpeg") no-repeat center center;
   background-size: cover;
+  color: #E71D36;
+  opacity: 0.7;
 }
 
 h1 {
   padding-top: -15px;
+}
+
+.btn {
+  background-color: #E71D36;
+  opacity: 0.7;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: #E71D36;
+  background-color: white;
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 ul {
