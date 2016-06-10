@@ -30,13 +30,13 @@ $(document).ready(function() {
 
     var counter = 0;
       numArray.forEach(function(list) {
-          $("#result").append("<li>" + numArray[counter] + "</li>");
-          counter++;
+        $("#result").append("<li>" + numArray[counter] + "</li>");
+        counter++;
       });
       $("h3").hide();
       $(".rules").slideUp("fast");
       $("#before").hide();
       $("#after").show();
       $("#result").show();
-    });
   });
+});
