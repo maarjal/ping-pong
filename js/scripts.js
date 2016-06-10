@@ -3,7 +3,10 @@ var result;
 var pingPong = function(number) {
   for (var i = 1; i <= number; i++) {
     numArray.push(i);
-  }
+    if (i % 15 === 0) {
+        numArray.splice(i-1, 1, "pingpong");
+      }
+    } 
   return result;
 };
 
